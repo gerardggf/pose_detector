@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
-import 'app/views/home/home_view.dart';
+import 'app/pose_detector_app.dart';
 
 void main() {
   runApp(
@@ -9,16 +9,4 @@ void main() {
       child: PoseDetectorApp(),
     ),
   );
-}
-
-class PoseDetectorApp extends StatelessWidget {
-  const PoseDetectorApp({super.key});
-
-  @override
-  Widget build(BuildContext context) {
-    return const MaterialApp(
-      title: 'Pose detector',
-      home: HomeView(),
-    );
-  }
 }
